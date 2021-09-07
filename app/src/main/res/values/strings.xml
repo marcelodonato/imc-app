@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">imc-app</string>
+    <string name="error"> O valor não pode ser menor que Zero</string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
+    <string name="resultado">Resultado</string>
+    <string name="calcular">Calcular</string>
+</resources>

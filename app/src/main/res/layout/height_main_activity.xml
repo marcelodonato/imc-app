@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/height"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="10sp">
+
+    <TextView
+        android:id="@+id/text_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/altura"
+        android:textColor="#FFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_margin"
+        android:text="1"
+        android:textColor="#FFFF"
+        android:textSize="@dimen/x_large_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_height" />
+
+    <Button
+        android:id="@+id/button_more_height"
+        android:layout_width="@dimen/Button"
+        android:layout_height="@dimen/Button"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/custom_button_green"
+        android:text="+"
+        android:textColor="#FFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button_less_height"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeight" />
+
+    <Button
+        android:id="@+id/button_less_height"
+        android:layout_width="@dimen/Button"
+        android:layout_height="@dimen/Button"
+        android:text="-"
+        android:textColor="#FFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button_red"
+        app:layout_constraintBottom_toBottomOf="@+id/button_more_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/button_more_height"
+        app:layout_constraintTop_toTopOf="@+id/button_more_height" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
