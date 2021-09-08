@@ -1,6 +1,8 @@
 package com.marcelodonato.imc_app
 
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -8,6 +10,10 @@ import kotlinx.android.synthetic.main.height_main_activity.*
 import kotlinx.android.synthetic.main.weight_main_activity.*
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        fun getStartIntent(context: Context) = Intent(context, MainActivity::class.java)
+    }
 
     var height: Double = 0.0
     var weight: Double = 0.0
@@ -24,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setHeight() {
         tvHeight.text = height.toString()
+
 
         setHeightButtons()
     }
